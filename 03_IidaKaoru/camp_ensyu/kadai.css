@@ -1,0 +1,36 @@
+p{
+    text-align: center;
+    font-size: 50px;
+}
+
+button{
+    margin: auto;
+}
+
+#btn-black {
+    display: block;
+    font-size: 20px;
+	width: 300px;
+	padding: 0.8em;
+	text-align: center;
+    text-decoration: none;
+    background-color: #000000;
+	color: #ffffff;
+	border: 2px solid #000000;
+	border-radius: 3px;
+	transition: .4s;
+}
+
+#btn-white {
+    display: block;
+    font-size: 20px;
+	width: 300px;
+	padding: 0.8em;
+	text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 3px;
+	transition: .4s;
+}

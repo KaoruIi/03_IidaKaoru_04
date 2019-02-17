@@ -1,0 +1,255 @@
+
+/* =========================
+
+index
+
+===========================*/
+
+
+body {
+    font-family: 'IM Fell DW Pica SC', serif;
+    text-align: center;
+    }
+
+/* タイトルのタイプライター*/
+
+h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid #ffa10a; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffa10a; }
+    }    
+
+.placeholder ::-webkit-input-placeholder {
+    color: #eeeeee;
+    text-align: center;
+    padding: 0%;
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.submit ::-webkit-input-placeholder {
+    color: #eeeeee;
+    text-align: center;
+    padding: 0%;
+}
+
+.record {
+    background-color: #eeeeee;
+    position: relative;
+    margin:0 auto;
+    text-align: center;
+	width: 400px;
+}
+
+input[type=text] {
+    font: 17px sans-serif;
+    background-color: #ffa10a;
+	box-sizing: border-box;
+	width: 250px;
+	padding: 2px 0;
+	border: 1px solid #ffa10a;
+	border-radius: 0px;
+    outline: none;
+    border-color: #eeeeee;
+    border-radius: 10px;
+
+}
+
+input[type="date"] {
+   font: 17px sans-serif;
+   position: relative;
+   border: 1px solid #ffa10a;
+   box-sizing: border-box;
+   width: 250px;
+   padding: 2px 0;
+   background: #ffa10a;
+   color: #eeeeee;
+   text-align: center;
+   border-radius: 10px;
+
+}
+
+
+/* 画像(カメラ)ボタン */
+
+.filelabel {
+    background-color:#eeeeee;
+    color: gray;     
+    border: 2px solid #eeeeee;  
+    border-radius: 3em;    
+    padding: 1px 9px;
+    display: inline-block;   
+ }
+
+ .filelabel img {
+    vertical-align: bottom; 
+ }
+
+ .filelabel:hover {
+    opacity: 0.5;          
+    border: 2px solid #ffa10a;
+    cursor: pointer; 
+ }
+
+ .filebtn {
+    display: none; 
+ }
+
+ /* プレビュー枠 */
+
+ .box-preview {
+    position: relative;
+    padding: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background: #eeeeee;
+    border: dashed 2px #c0c0c0;/*点線*/
+    overflow: hidden;
+    display: none;
+}
+.box-preview p {
+    margin: auto; 
+    padding: 80px 0;
+    font-size: 20px;
+    color: #c0c0c0;
+    box-sizing: border-box;
+    position: relative;
+}
+ 
+#preview{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#preview img{
+    height:200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* アップロードボタン */
+
+input[type=submit] {
+  position: relative;
+  background-color: #ffa10a;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 30px;
+  -webkit-transition: none;
+  transition: none;
+  box-shadow: 0 3px 0 #ff7f0f;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+input[type=submit]:hover {
+  top: -2px;
+  box-shadow: 0 5px 0 #ff7f0f;
+}
+input[type=submit]:active {
+  top: 3px;
+  box-shadow: none;
+}
+
+/* Date List */
+
+.navbar-brand{
+    color: gray;
+    font-size: 20px;
+}
+
+
+/* =========================
+
+select.php
+
+===========================*/
+
+
+/* .result {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    
+} */
+
+/* 画像用box */
+.box-shop {
+    position: relative;
+    margin: 1em auto;
+    padding: 20px 10px 7px;
+    border: solid 3px #ffa10a;
+    width: 300px;
+} 
+
+/* 日付 */
+.box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 15px;
+    background: #ffa10a;
+    color: #ffffff;
+    border-radius: 5px 5px 0 0;
+}
+
+/* お店一覧 タイプライター */
+
+.shop-title {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+
+/* 画像 */
+.box-shop img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* お店の名前と空白 */
+#box-space{
+    margin-right: 25px;
+    font-size: 25px;
+}
